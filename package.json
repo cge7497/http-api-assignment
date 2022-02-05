@@ -10,12 +10,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/IGM-RichMedia-at-RIT/http-api-assignment.git"
+    "url": "git+https://github.com/cge7497/http-api-assignment.git"
   },
   "author": "Christian Eliopoulos",
-  "license": "UNLICENSED",
-  "bugs": {
-    "url": "https://github.com/IGM-RichMedia-at-RIT/http-api-assignment/issues"
-  },
-  "homepage": "https://github.com/IGM-RichMedia-at-RIT/http-api-assignment#readme"
+  "license": "UNLICENSED"
 }

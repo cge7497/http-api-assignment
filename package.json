@@ -1,0 +1,21 @@
+{
+  "name": "http-api-assignment",
+  "version": "1.0.0",
+  "description": "HTTP API HW Assignment for Rich Media 2",
+  "main": "./src/server.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "pretest": "eslint ./src --fix",
+    "test": "echo \"Tests complete \""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IGM-RichMedia-at-RIT/http-api-assignment.git"
+  },
+  "author": "Christian Eliopoulos",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/IGM-RichMedia-at-RIT/http-api-assignment/issues"
+  },
+  "homepage": "https://github.com/IGM-RichMedia-at-RIT/http-api-assignment#readme"
+}

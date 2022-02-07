@@ -13,5 +13,9 @@
     "url": "git+https://github.com/cge7497/http-api-assignment.git"
   },
   "author": "Christian Eliopoulos",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/cge7497/http-api-assignment/issues"
+  },
+  "homepage": "https://github.com/cge7497/http-api-assignment#readme"
 }

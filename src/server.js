@@ -4,7 +4,6 @@ const query = require('querystring');
 
 const htmlHandler = require('./htmlHandler.js');
 const responseHandler = require('./responseHandler.js');
-const xmlHandler = require('./xmlHandler.js');
 
 const port = process.env.PORT || process.env.NODE_PORT || 3000;
 
@@ -21,14 +20,17 @@ const urlStruct = {
 }
 
 const onRequest = (request, response) => {
-      //first we have to parse information from the url
+    // Parsing info from the url. 
+    // The URL may have two implemented query paramaters: logged in or valid.
     const parsedUrl = url.parse(request.url);
-    const queryParams = query.parse(parsedUrl);
+    const queryParams = query.parse(parsedUrl.query);
+    const type = request.headers.accept;
 
+    console.dir(parsedUrl.pathname);
     if(urlStruct[parsedUrl.pathname]){
-        urlStruct[parsedUrl.pathname](request, response);
+        urlStruct[parsedUrl.pathname](request, response, type, queryParams);
       } else {
-        urlStruct.notFound(request, response);
+        urlStruct.notFound(request, response, type);
     };
 }
 
